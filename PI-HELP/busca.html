@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Exclusivo para Internet Explorer-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--DEfinido para abrir e se ajustar corretamente em telas de celular-->
+    <link href="style.css" rel="stylesheet" />
+    <title>HELP - Contratar Acompanhante</title>
+  </head>
+  
+  <body>
+    <div class="container">
+      <iframe src="header.html"></iframe>
+      
+      <div class="center">
+        <h1><b>Contratar Acompanhante</b></h1>
+      </div>
+        
+      <form action="selecao.html">
+        
+        <div class="form-fields">
+          <label for="data-contratacao">Data da Contratação:</label>
+          <input type="date" id="data-contratacao" name="data-contratacao"><br><br>
+  
+          <label for="periodo-contratacao">Período a ser Contratado:</label>
+          <div class="hour">
+            <label for="hora-inicial">Hora inicial:</label>
+            <input type="time" id="hora-inicial" name="hora-inicial"><br><br>
+    
+            <label for="hora-final">Hora final:</label>
+            <input type="time" id="hora-final" name="hora-final"><br><br>
+          </div>
+          
+          <p><b>Localize o Acompanhante mais Próximo:</b><p>
+          <label for="cep">Informe seu CEP:</label>
+          <input type="text" id="cep" name="cep">
+          <p><b>ou</b></p>
+          <label for="cidade">Informe sua cidade:</label>
+          <input type="text" id="cidade" name="cidade">
+          <p><b>ou</b></p>
+          <label for="estado">Estado:</label>
+          <select id="estado" name="estado">
+            <option value="Selecione"><i>Selecione seu Estado</i></option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+          </select>
+        </div>
+      </form>
+         
+      <div class="use-location">
+        <div class="location-icon"></div>
+        <div class="provide-location">
+          <p><b>Usar minha localização</b></p>
+          <label>
+            <input type="radio" name="localizao-atual" value="localizacao-atual">
+            <span>Concordo em fornecer minha localização geográfica atual.</span>
+          </label>
+          </div>
+      </div>
+          
+      <button class="color" id="smallerRight"><a href="selecao.html">Localizar</a></button>
+                 
+      <iframe src="footer.html"></iframe>
+    </div>
+  </body>
+</html>

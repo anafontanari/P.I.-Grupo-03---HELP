@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Exclusivo para Internet Explorer-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--DEfinido para abrir e se ajustar corretamente em telas de celular-->
+    <link href = "style.css" rel = "stylesheet" />
+    <script src="senha.js"></script>
+    <title>HELP - Pagamento</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <iframe src="header.html"></iframe>  
+      
+      <div class="center">
+        <h1><b>Pagamento</b></h1>
+        <br>
+        <h2>Escolha a forma de pagamento</h2>
+        <label>
+          <input type="radio" name="pagamento" value="cartao">
+          <span>Cartão de Crédito</span>
+        </label>
+      </div>
+    
+      <label>
+        <div class="marginPix">
+          <input type="radio" name="pagamento" value="pix">
+          <span>Pix</span>
+        </div>
+      </label>
+      <br>
+      <button onclick="mostrarPopUpSave()"class="color" id="smallerCenter">Salvar</button>
+  
+      <iframe src="footer.html"></iframe>  
+    </div>
+  </body>
+</html>
